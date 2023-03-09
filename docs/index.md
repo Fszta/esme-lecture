@@ -18,7 +18,7 @@
 * `git checkout -b <branch_name>` create and switch to new branch `<branch_name>`
 
 ## Branch & coding workflow
-**Reminder**: Don't code on master branch
+> **Reminder**: Don't code on master branch
 
 ### The minimal workflow, can be used when coding alone
 
