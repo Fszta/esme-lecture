@@ -283,16 +283,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    
+  <a href="#4-lets-implement-your-robot" class="md-nav__link">
+    4 - Let's implement your robot
   </a>
   
-    <nav class="md-nav" aria-label="">
+    <nav class="md-nav" aria-label="4 - Let's implement your robot">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#bonus" class="md-nav__link">
-    Bonus
+  <a href="#1-implement-a-basic-robot-that-say-hello" class="md-nav__link">
+    1 - Implement a basic robot that say hello
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-create-a-feature-to-give-date-time" class="md-nav__link">
+    2 - Create a feature to give date &amp; time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-its-your-turn" class="md-nav__link">
+    3 - It's your turn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bonus-1" class="md-nav__link">
+    Bonus 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bonus-2" class="md-nav__link">
+    Bonus 2
   </a>
   
 </li>
@@ -363,16 +391,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    
+  <a href="#4-lets-implement-your-robot" class="md-nav__link">
+    4 - Let's implement your robot
   </a>
   
-    <nav class="md-nav" aria-label="">
+    <nav class="md-nav" aria-label="4 - Let's implement your robot">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#bonus" class="md-nav__link">
-    Bonus
+  <a href="#1-implement-a-basic-robot-that-say-hello" class="md-nav__link">
+    1 - Implement a basic robot that say hello
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-create-a-feature-to-give-date-time" class="md-nav__link">
+    2 - Create a feature to give date &amp; time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-its-your-turn" class="md-nav__link">
+    3 - It's your turn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bonus-1" class="md-nav__link">
+    Bonus 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bonus-2" class="md-nav__link">
+    Bonus 2
   </a>
   
 </li>
@@ -420,15 +476,24 @@ github</p>
 <li>Notion (it's not dedicated to task tracking but provides a nice board feature)</li>
 </ul>
 <h2 id="3-create-your-backlog">3 - Create your backlog</h2>
-<p>Add the following tasks to your board : 
-* Implement a basic robot class 
-* b
-* b
-* f
-* 1
-* B
-* b</p>
-<h2 id="_1"></h2>
+<p>Add the following tasks to your board : </p>
+<ul>
+<li>1 - Implement a basic robot that say hello </li>
+<li>2 - Create a feature to give date &amp; time  </li>
+<li>3 - Allow robots to move : right/left/forward/backward</li>
+<li>4 - Allow robots to detect obstacle</li>
+<li>5 - Allow robots to record cardiac frequency</li>
+<li>6 - Allow robots to record ambient temperature</li>
+<li>7 - Integrate some slack or discord alerts when a branch is merged on main</li>
+<li>Bonus 1 Implement a more real code by adding camera / sensors class</li>
+<li>Bonus 2 Create some unit tests and automate the execution </li>
+</ul>
+<h2 id="4-lets-implement-your-robot">4 - Let's implement your robot</h2>
+<blockquote>
+<p>You must create a branch foreach task, submit a pull request, review it with you pair and merge it
+Don't forget to link your pull request to the corresponding ticket</p>
+</blockquote>
+<h3 id="1-implement-a-basic-robot-that-say-hello">1 - Implement a basic robot that say hello</h3>
 <p>In a file <code>robot.py</code></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span> <span class="nc">Robot</span><span class="p">:</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
@@ -449,8 +514,75 @@ github</p>
 </span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
 </span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="n">start</span><span class="p">()</span>
 </span></code></pre></div>
-<h3 id="bonus">Bonus</h3>
-<p>Create a continuous integration pipeline using github action to automate test execution on pull request and on merge</p>
+<h3 id="2-create-a-feature-to-give-date-time">2 - Create a feature to give date &amp; time</h3>
+<p>In your file <code>robot.py</code></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">class</span> <span class="nc">Robot</span><span class="p">:</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;hello, my name is </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="nd">@staticmethod</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    <span class="k">def</span> <span class="nf">give_date_and_time</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>        <span class="n">current_datetime</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">current_datetime</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>Don't forget</strong> to call the method <code>robot.give_date_and_time()</code> from your <code>main.py</code>  </p>
+<h3 id="3-its-your-turn">3 - It's your turn</h3>
+<p>Now let's implement all the feature described in your backlog.
+As the aim is to simulate a real project (having conflicts etc...), you must develop task 3 &amp; 4 in parallel, do the same for 5, 6 &amp; 7</p>
+<h3 id="bonus-1">Bonus 1</h3>
+<p>In a more realistic project, you will have other classes which implements some logic behind the feature added in 3 / 4 / 5 / 6 / 7.<br />
+For any sensor, you'll have to configure the pins you're using in your wiring etc.</p>
+<p>In our case, it can be something like :</p>
+<ul>
+<li><code>CardiacFrequencySensor</code></li>
+<li><code>TemperatureSensor</code></li>
+<li><code>Camera</code></li>
+<li>etc...</li>
+</ul>
+<pre class="mermaid"><code>classDiagram
+  CardiacFrequencySensor "1" &lt;-- "0..1" Robot:has
+  Camera "1" &lt;-- "0..1" Robot:has
+
+  Robot : +String name
+  Robot : +String phoneNumber
+  Robot : +String emailAddress
+  Robot: +say_hello()
+  Robot: +give_date_and_time()
+  Robot: +output_cardiac_frequency()
+
+  class CardiacFrequencySensor{
+    +int data_pin
+    +int sample_frequency
+    +read_value()  
+  }
+
+  class Camera {
+    +int fps
+    +int frame_width
+    +int frame_height
+    +read_frame()  
+  }</code></pre>
+<h3 id="bonus-2">Bonus 2</h3>
+<p>Create a continuous integration pipeline using github action to automate test execution on pull request</p>
+<p>Here is an example of a unit test in python: </p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span> <span class="nn">unittest</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span> <span class="nn">code.my_calculations</span> <span class="kn">import</span> <span class="n">Calculations</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">class</span> <span class="nc">TestCalculations</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="k">def</span> <span class="nf">test_sum</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>        <span class="n">calculation</span> <span class="o">=</span> <span class="n">Calculations</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">calculation</span><span class="o">.</span><span class="n">get_sum</span><span class="p">(),</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;The sum is wrong.&#39;</span><span class="p">)</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+</span></code></pre></div>
 
 
 
