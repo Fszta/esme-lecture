@@ -52,12 +52,16 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -65,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#git-practical-session-introduction" class="md-skip">
+        <a href="#esme-git-practical-session-introduction" class="md-skip">
           Skip to content
         </a>
       
@@ -100,12 +104,32 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Git practical session - Introduction
+              ESME - Git practical session - Introduction
             
           </span>
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -196,12 +220,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Git practical session - Introduction
+          ESME - Git practical session - Introduction
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="." class="md-nav__link md-nav__link--active">
-        Git practical session - Introduction
+        ESME - Git practical session - Introduction
       </a>
       
         
@@ -234,9 +258,83 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
+  <a href="#branch-coding-workflow" class="md-nav__link">
+    Branch &amp; coding workflow
   </a>
+  
+    <nav class="md-nav" aria-label="Branch &amp; coding workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-minimal-workflow-can-be-used-when-coding-alone" class="md-nav__link">
+    The minimal workflow, can be used when coding alone
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-basic-feature-branch-workflow" class="md-nav__link">
+    A basic feature branch workflow
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    Best practices
+  </a>
+  
+    <nav class="md-nav" aria-label="Best practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#make-single-purpose-small-commits" class="md-nav__link">
+    Make single-purpose &amp; small commits
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#share-only-what-is-necessary-add-gitignore-to-you-repository" class="md-nav__link">
+    Share only what is necessary, add .gitignore to you repository
+  </a>
+  
+    <nav class="md-nav" aria-label="Share only what is necessary, add .gitignore to you repository">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ginignore-simple-example" class="md-nav__link">
+    .ginignore simple example :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commit-often-branch-frequently" class="md-nav__link">
+    Commit often &amp; branch frequently
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#write-detailed-commit-message-but-short" class="md-nav__link">
+    Write detailed commit message (but short !)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -304,9 +402,83 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
+  <a href="#branch-coding-workflow" class="md-nav__link">
+    Branch &amp; coding workflow
   </a>
+  
+    <nav class="md-nav" aria-label="Branch &amp; coding workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-minimal-workflow-can-be-used-when-coding-alone" class="md-nav__link">
+    The minimal workflow, can be used when coding alone
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-basic-feature-branch-workflow" class="md-nav__link">
+    A basic feature branch workflow
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    Best practices
+  </a>
+  
+    <nav class="md-nav" aria-label="Best practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#make-single-purpose-small-commits" class="md-nav__link">
+    Make single-purpose &amp; small commits
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#share-only-what-is-necessary-add-gitignore-to-you-repository" class="md-nav__link">
+    Share only what is necessary, add .gitignore to you repository
+  </a>
+  
+    <nav class="md-nav" aria-label="Share only what is necessary, add .gitignore to you repository">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ginignore-simple-example" class="md-nav__link">
+    .ginignore simple example :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commit-often-branch-frequently" class="md-nav__link">
+    Commit often &amp; branch frequently
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#write-detailed-commit-message-but-short" class="md-nav__link">
+    Write detailed commit message (but short !)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -325,14 +497,15 @@
                   
 
 
-<h1 id="git-practical-session-introduction">Git practical session - Introduction</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
+<h1 id="esme-git-practical-session-introduction">ESME - Git practical session - Introduction</h1>
 <h2 id="what-we-have-seen-last-week">What we have seen last week</h2>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li>git concept &amp; basic commands</li>
+<li>branches</li>
+<li>pull request &amp; review process</li>
+<li>simple feature branch workflow</li>
+<li>ci/cd introduction</li>
+<li>zoom on github</li>
 </ul>
 <h2 id="commands-recap">Commands recap</h2>
 <ul>
@@ -342,14 +515,89 @@
 <li><code>git push origin &lt;branch_name&gt;</code> </li>
 <li><code>git branch &lt;branch_name&gt;</code> create a new branch</li>
 <li><code>git checkout &lt;branch_name&gt;</code> switch to branch <code>&lt;branch_name&gt;</code></li>
-<li><code>git checkout -b &lt;branch_name</code> create and switch to new branch <code>&lt;branch_name&gt;</code></li>
+<li><code>git checkout -b &lt;branch_name&gt;</code> create and switch to new branch <code>&lt;branch_name&gt;</code></li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+<h2 id="branch-coding-workflow">Branch &amp; coding workflow</h2>
+<blockquote>
+<p><strong>Reminder</strong>: Don't code on master branch</p>
+</blockquote>
+<h3 id="the-minimal-workflow-can-be-used-when-coding-alone">The minimal workflow, can be used when coding alone</h3>
+<pre class="mermaid"><code>---
+title: Minimal workflow
+---
+%%{init: { 'logLevel': 'debug', 'theme': 'base' } }%%
+gitGraph
+   commit
+   commit
+   branch develop
+   checkout develop
+   commit
+   commit
+   checkout main
+   merge develop
+   commit
+   commit</code></pre>
+<h3 id="a-basic-feature-branch-workflow">A basic feature branch workflow</h3>
+<pre class="mermaid"><code>---
+title: Basic feature branch workflow
+---
+    %%{init: { 'logLevel': 'debug', 'theme': 'base' } }%%
+    gitGraph
+       commit id: "1"
+       commit id: "2"
+       branch feature_1
+       checkout feature_1
+       commit id: "3"
+       checkout main
+       commit id: "4"
+       checkout main
+       branch feature_2
+       checkout feature_2
+       commit id: "5"
+       checkout main
+       commit id: "6"
+       checkout feature_1
+       commit id: "7"
+       checkout main
+       merge feature_1 id: "customID" tag: "customTag" type: REVERSE
+       checkout feature_2
+       commit id: "8"
+       checkout main
+       commit id: "9"</code></pre>
+<h2 id="best-practices">Best practices</h2>
+<h3 id="make-single-purpose-small-commits">Make single-purpose &amp; small commits</h3>
+<p>By creating small commits, it helps everyone in a team to understand what have been done.
+Also, it's easier to revert a small change in case of bug.</p>
+<h3 id="share-only-what-is-necessary-add-gitignore-to-you-repository">Share only what is necessary, add .gitignore to you repository</h3>
+<p><code>.gitignore</code> list all the files and folder that must not be tracked</p>
+<h4 id="ginignore-simple-example"><code>.ginignore</code> simple example :</h4>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>__pycache__/
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>venv/
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>data/
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>download/
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>log.txt
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>any_file_you_want_to_exclude.any_extension
+</span></code></pre></div>
+<h3 id="commit-often-branch-frequently">Commit often &amp; branch frequently</h3>
+<p>Prefer short-term branch, this will improve the traceability and highly simplify the code review process.
+Try to not include large number of change in the same branch, and avoid unrelated changes.</p>
+<blockquote>
+<p>It's better to commit something un-perfect than nothing  </p>
+</blockquote>
+<h3 id="write-detailed-commit-message-but-short">Write detailed commit message (but short !)</h3>
+<p>When reading a commit message, anyone should be able to understand what have been done.
+In general, try to explain what changed from previous code and why.</p>
+<p>Some good examples: </p>
+<ul>
+<li>Change led GPIO from 20 to 18</li>
+<li>Fix baud-rate for SPI communication with adc</li>
+<li>Change unit from miles to kilometers in compute_distance method</li>
+</ul>
+<p>Some bad examples:</p>
+<ul>
+<li>Update file1, file2</li>
+<li>A modification</li>
+</ul>
 
 
 
@@ -387,7 +635,7 @@ docs/
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.b78d2936.min.js"></script>
