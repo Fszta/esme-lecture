@@ -1,26 +1,60 @@
-# Git practical session - Introduction
-
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# ESME - Git practical session - Introduction
 
 ## What we have seen last week
+* git concept & basic commands
+* branches
+* pull request & review process
+* simple feature branch workflow
+* ci/cd introduction
+* zoom on github
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-
-## Commands
+## Commands recap
 * `git init` Initialize a git repository
 * `git add <file_name>` add a file to staging area
 * `git commit -m "an explicit message"` 
 * `git push origin <branch_name>` 
 * `git branch <branch_name>` create a new branch
 * `git checkout <branch_name>` switch to branch `<branch_name>`
-* `git checkout -b <branch_name` create and switch to new branch `<branch_name>`
-## Project layout
+* `git checkout -b <branch_name>` create and switch to new branch `<branch_name>`
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+
+## Best practices
+### Make single-purpose & small commits
+By creating small commits, it helps everyone in a team to understand what have been done.
+Also, it's easier to revert a small change in case of bug.
+
+
+### Share only what is necessary, add .gitignore to you repository
+`.gitignore` list all the files and folder that must not be tracked
+
+#### `.ginignore` simple example : 
+
+```
+__pycache__/
+venv/
+data/
+download/
+log.txt
+any_file_you_want_to_exclude.any_extension
+```
+
+### Commit often & branch frequently
+Prefer short-term branch, this will improve the traceability and highly simplify the code review process.
+Try to not include large number of change in the same branch, and avoid unrelated changes.
+
+> It's better to commit something un-perfect than nothing  
+
+### Write detailed commit message (but short !)
+When reading a commit message, anyone should be able to understand what have been done.
+In general, try to explain what changed from previous code and why.
+
+Some good examples: 
+
+* Change led GPIO from 20 to 18
+* Fix baud-rate for SPI communication with adc
+* Change unit from miles to kilometers in compute_distance method
+
+Some bad examples:
+
+* Update file1, file2
+* A modification
