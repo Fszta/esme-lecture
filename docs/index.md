@@ -17,6 +17,60 @@
 * `git checkout <branch_name>` switch to branch `<branch_name>`
 * `git checkout -b <branch_name>` create and switch to new branch `<branch_name>`
 
+## Branch & coding workflow
+**Reminder**: Don't code on master branch
+
+### The minimal workflow, can be used when coding alone
+
+``` mermaid
+---
+title: Minimal workflow
+---
+%%{init: { 'logLevel': 'debug', 'theme': 'base' } }%%
+gitGraph
+   commit
+   commit
+   branch develop
+   checkout develop
+   commit
+   commit
+   checkout main
+   merge develop
+   commit
+   commit
+```
+
+
+### A basic feature branch workflow
+
+``` mermaid
+---
+title: Basic feature branch workflow
+---
+    %%{init: { 'logLevel': 'debug', 'theme': 'base' } }%%
+    gitGraph
+       commit id: "1"
+       commit id: "2"
+       branch feature_1
+       checkout feature_1
+       commit id: "3"
+       checkout main
+       commit id: "4"
+       checkout main
+       branch feature_2
+       checkout feature_2
+       commit id: "5"
+       checkout main
+       commit id: "6"
+       checkout feature_1
+       commit id: "7"
+       checkout main
+       merge feature_1 id: "customID" tag: "customTag" type: REVERSE
+       checkout feature_2
+       commit id: "8"
+       checkout main
+       commit id: "9"
+```
 
 ## Best practices
 ### Make single-purpose & small commits
